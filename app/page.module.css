@@ -1,5 +1,144 @@
 .hero {
   height: 100vh;
-
   background-color: #061941;
+}
+
+.herocentre {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.herotitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding: 0 20;
+
+  min-width: 100vw;
+  max-width: 100vw;
+}
+
+.herowelcome {
+  margin: 0;
+
+  font-size: 90;
+  font-weight: 700;
+  color: white;
+}
+
+.herochurchname {
+
+  height: 80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+
+  min-width: 100vw;
+  max-width: 100vw;
+}
+
+.herochurchinitials {
+  font-family: monotypeCorsiva;
+  font-size: 100;
+  color: white;
+  letter-spacing: 5;
+
+  margin: 0 20 0 0;
+}
+
+.herochurch {
+  margin: 5 0 0 0;
+
+  font-weight: 700;
+  font-size: 90;
+  color: white;
+}
+
+.herotimings {
+  margin: 0 auto;
+  padding: 0 20;
+}
+
+.herotimingssundayservice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10;
+}
+
+.herotimingssundayschool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.herotimingstitle {
+  font-size: 25;
+  font-weight: 700;
+
+  margin-right: 5;
+
+  color: white;
+}
+
+.herotimingstime {
+  font-size: 25;
+  color: white;
+}
+
+@media only screen and (max-width: 550px) {
+  .herochurchname {
+    flex-direction: column;
+  }
+  
+  .herochurchinitials {
+    height: 100px;
+  }
+
+  .herowelcome {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+
+  .herochurch {
+    font-size: 70px;
+  }
+
+  .herotimingssundayservice {
+    flex-direction: column;
+  }
+
+  .herotimingssundayschool {
+    flex-direction: column;
+  }
+
+  .herotimingstitle {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .herochurchinitials {
+    height: 90px;
+    font-size: 80;
+  }
+
+  .herowelcome {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .herochurch {
+    font-size: 50px;
+  }
 }

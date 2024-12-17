@@ -6,7 +6,9 @@
     /* background-color: black; */
     color: white;
 
-    border-radius: 0 0 30 30
+    border-radius: 0 0 30 30;
+
+    transition: background-color 0.8s ease-in-out;
 }
 
 .navbarcentre {
@@ -39,8 +41,15 @@
     text-decoration: none;
     color: white;
     font-weight: 700;
-    margin: 0 5 0 5;
-    padding: 0 10 0 10;
+    margin: 0 5;
+    padding: 10 20;
+    border-radius: 9999;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbarlink:hover {
+    background-color: #8080804a;
 }
 
 .navbarlinkbutton {
@@ -57,6 +66,7 @@
 
     background-color: white;
     color: black;
+    border-radius: 9999;
 
     transition: all 0.3s ease-in-out;
 }
@@ -87,4 +97,5 @@
 
     background-color: white;
     color: black;
+    border-radius: 9999;
 }

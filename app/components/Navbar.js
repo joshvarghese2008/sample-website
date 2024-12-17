@@ -11,17 +11,31 @@ export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    const [navbar, setNavbar] = useState(false);
+
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const changeBackground = () => {
+        if (window.scrollY >= 100) {
+            setNavbar(true)
+        } else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
+
     return (
         <>
-            <div className={styles.navbar}>
+            <div className={styles.navbar} style={navbar ? {backgroundColor: '#061941'} : {backgroundColor: 'transparent'}}>
                 <div className={styles.navbarcentre}>
                     <div className={styles.navbarcontent}>
                         <div>
-                            <Image src={Logo} alt="Pentecostal Christian Assembly Logo" height={70} />
+                            <Link href={'/'}>
+                                <Image src={Logo} alt="Pentecostal Christian Assembly Logo" height={70} />
+                            </Link>
                         </div>
                         <div className="hidden md:flex">
                             <ul className={styles.navbarlinks}>
