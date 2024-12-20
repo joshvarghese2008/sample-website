@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import styles from "./components.module.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { MenuRounded, CloseRounded } from "@mui/icons-material"
 import Image from "next/image"
 import Logo from "../../public/images/churchlogo.png"
@@ -17,15 +17,17 @@ export default function Navbar() {
         setIsOpen(!isOpen);
     };
 
-    const changeBackground = () => {
-        if (window.scrollY >= 100) {
-            setNavbar(true)
-        } else {
-            setNavbar(false);
+    useEffect(() => {
+        const changeBackground = () => {
+            if (window.scrollY >= 100) {
+                setNavbar(true)
+            } else {
+                setNavbar(false);
+            }
         }
-    }
 
-    window.addEventListener('scroll', changeBackground)
+        window.addEventListener('scroll', changeBackground)
+    })
 
     return (
         <>
