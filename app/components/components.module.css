@@ -9,6 +9,8 @@
     border-radius: 0 0 30 30;
 
     transition: background-color 0.8s ease-in-out;
+
+    z-index: 50;
 }
 
 .navbarcentre {
@@ -105,6 +107,8 @@
 
 .footer {
     padding: 40 0 30 0;
+    background-color: #d8d7d7;
+    border-radius: 30 30 0 0;
 }
 
 .footercentre {
@@ -153,10 +157,10 @@
     font-size: 14px
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
     .footerwebsitelinkscontainer {
         flex-direction: column;
-        row-gap: 3px;
+        row-gap: 15px;
     }
 
     .footerwebsitelink {

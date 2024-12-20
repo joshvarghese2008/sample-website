@@ -13,14 +13,18 @@ export default function Footer() {
                     <div className={styles.footerlinks}>
                         <div className={styles.footerwebsitelinkscontainer}>
                             <Link href={'/'} className={styles.footerwebsitelink}>Home</Link>
-                            <Link href={'/'} className={styles.footerwebsitelink}>Our Services</Link>
+                            {/* <Link href={'/'} className={styles.footerwebsitelink}>Our Services</Link> */}
                             <Link href={'/'} className={styles.footerwebsitelink}>What We Believe</Link>
                             <Link href={'/'} className={styles.footerwebsitelink}>Give</Link>
                             <Link href={'/'} className={styles.footerwebsitelink}>Plan A Visit</Link>
                         </div>
                         <div className={styles.footerexternallinkscontainer}>
-                            <FacebookRounded />
-                            <YouTube />
+                            <Link href={'/'}>
+                                <FacebookRounded />
+                            </Link>
+                            <Link href={'/'}>
+                                <YouTube />
+                            </Link>
                         </div>
                     </div>
                     <hr className={styles.footerdivider} />

@@ -39,8 +39,8 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:flex">
                             <ul className={styles.navbarlinks}>
-                                <li><Link href={'/'} className={styles.navbarlink}>Our Services</Link></li>
-                                <li><Link href={'/'} className={styles.navbarlink}>What We Believe</Link></li>
+                                {/* <li><Link href={'/'} className={styles.navbarlink}>Our Services</Link></li> */}
+                                <li><Link href={'/believe'} className={styles.navbarlink}>What We Believe</Link></li>
                                 <li><Link href={'/'} className={styles.navbarlink}>Give</Link></li>
                                 <li><Link href={'/'} className={styles.navbarlinkbutton}>Plan A Visit</Link></li>
                             </ul>
@@ -54,8 +54,8 @@ export default function Navbar() {
                 </div>
                 {isOpen && (
                 <div className="flex flex-col items-center basis-full bg-church-blue rounded-3xl mx-5 mb-5 pt-4 pb-5">
-                    <Link href={'/'} className={styles.navbarlinkmenu}>Our Services</Link>
-                    <Link href={'/'} className={styles.navbarlinkmenu}>What We Believe</Link>
+                    {/* <Link href={'/'} className={styles.navbarlinkmenu}>Our Services</Link> */}
+                    <Link href={'/believe'} className={styles.navbarlinkmenu}>What We Believe</Link>
                     <Link href={'/'} className={styles.navbarlinkmenu}>Give</Link>
                     <Link href={'/'} className={styles.navbarlinkbuttonmenu}>Plan A Visit</Link>
                 </div>
